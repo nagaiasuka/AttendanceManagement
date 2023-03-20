@@ -5,9 +5,7 @@ import="java.util.*" %>
 <main>
   <div style="height: 10vh"></div>
 
-  <div
-    class="d-flex align-items-center justify-content-center p-1"
-    style="height: 85vh">
+  <div class="d-flex align-items-center justify-content-center p-1" style="height: 85vh">
     <div class="border col-7 p-3">
       <br />
       <h2>新規登録</h2>
@@ -21,10 +19,7 @@ import="java.util.*" %>
             </div>
             <div class="form-group">
               <label>メール：</label>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="yamada@mail.com" />
+              <input type="text" class="form-control" placeholder="yamada@mail.com" />
             </div>
             <div class="form-group">
               <label>パスワード：</label>
