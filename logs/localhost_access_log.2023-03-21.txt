@@ -14,3 +14,4 @@
 0:0:0:0:0:0:0:1 - - [21/Mar/2023:00:43:47 +0900] "GET /user/login HTTP/1.1" 404 909
 0:0:0:0:0:0:0:1 - - [21/Mar/2023:00:43:47 +0900] "GET /user/login HTTP/1.1" 404 909
 0:0:0:0:0:0:0:1 - - [21/Mar/2023:00:44:03 +0900] "GET /attendanceManagement/login HTTP/1.1" 200 3410
+0:0:0:0:0:0:0:1 - - [21/Mar/2023:07:31:59 +0900] "GET /attendanceManagement/login HTTP/1.1" 200 3239
