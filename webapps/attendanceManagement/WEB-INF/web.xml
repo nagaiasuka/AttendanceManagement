@@ -36,5 +36,27 @@
                 <url-pattern>/userResist</url-pattern>
         </servlet-mapping>
 
+        <!-- ログイン -->
+        <servlet>
+                <servlet-name>LoginCheck</servlet-name>
+                <servlet-class>LoginCheckServlet</servlet-class>
+        </servlet>
+
+        <servlet-mapping>
+                <servlet-name>LoginCheck</servlet-name>
+                <url-pattern>/loginCheck</url-pattern>
+        </servlet-mapping>
+
+        <!-- 従業員一覧 -->
+        <servlet>
+                <servlet-name>List</servlet-name>
+                <servlet-class>ListServlet</servlet-class>
+        </servlet>
+
+        <servlet-mapping>
+                <servlet-name>List</servlet-name>
+                <url-pattern>/list</url-pattern>
+        </servlet-mapping>
+
 
 </web-app>

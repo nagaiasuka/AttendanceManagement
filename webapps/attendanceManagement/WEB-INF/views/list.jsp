@@ -21,32 +21,20 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
                             </tr>
                         </thead>
                         <tbody>
+                            <% 
+                            List<Integer> idList = (List<Integer>)request.getAttribute("idList");
+                            ArrayList<HashMap<Integer,String>> nameMap = (ArrayList<HashMap<Integer,String>>)request.getAttribute("nameMap");
+                            ArrayList<HashMap<Integer,String>> mailMap = (ArrayList<HashMap<Integer,String>>)request.getAttribute("mailMap");
+                                    
+                            for(Integer id:idList){  
+                            %>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
+                                <th scope="row"><%= id %></th>
+                                <td><%= nameMap.get(id).get(id) %></td>
+                                <td><%= mailMap.get(id).get(id) %></td>
+                                <td></td>
                             </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                            </tr>
-
+                            <% } %>
                         </tbody>
                     </table>
                 </div>

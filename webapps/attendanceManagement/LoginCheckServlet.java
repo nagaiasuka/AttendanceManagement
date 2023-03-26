@@ -15,27 +15,20 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
 import java.sql.*;
 
-@WebServlet("/UserResistServlet")
-public class UserResistServlet extends HttpServlet {
+@WebServlet("/LoginCheckServlet")
+public class LoginCheckServlet extends HttpServlet {
    	//ログイン画面を表示させる
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		//パスワードの長さ指定
-		int passRength = 8;
 
-		String name = request.getParameter("name");
 		String mail = request.getParameter("mail");
 		String password = request.getParameter("password");
 
 		//バリデーション
-		
 		List<String> caveatList = new ArrayList<>();
-		if(name == null || name == ""){
-			caveatList.add("氏名が入力されていません。");
-		}
 		
 		if(mail == null || mail == ""){
 			caveatList.add("メールが入力されていません。");
@@ -43,10 +36,7 @@ public class UserResistServlet extends HttpServlet {
 
 		if(password == null || password==""){
 			caveatList.add("パスワードが入力されていません。");
-		}else if(password.length() < passRength){
-			caveatList.add("パスワードは８文字以上で設定してください。");
 		}
-
 	
 		String view=null;
 		//警告があるか
@@ -62,18 +52,26 @@ public class UserResistServlet extends HttpServlet {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
 
-		String sql = "INSERT into users (name,mail,password) values(?,?,?);";
+		String sql = "SELECT * FROM users WHERE mail = ?";
 		try(
 			Connection connection = DriverManager.getConnection(url, user, dbpass);
 			PreparedStatement statement = connection.prepareStatement(sql)){
-				statement.setString(1, name);
-				statement.setString(2, mail);
-				statement.setString(3, password);
+				
+				statement.setString(1, mail);
+				ResultSet results = statement.executeQuery();
+
+				while(results.next()){
+					int id = results.getInt("id");
+					String getMail = results.getString("mail");
+					String getPass = results.getString("password");
+					System.out.println(getPass);
+				}
 				statement.executeUpdate();
+
+
 				connection.close();
 
 		}catch (Exception e) {
@@ -84,7 +82,7 @@ public class UserResistServlet extends HttpServlet {
 			request.setAttribute("caveatList",caveatList);
 			view = "./WEB-INF/views/error.jsp";
 		}else{
-			view = "./WEB-INF/views/login.jsp";
+			view = "./WEB-INF/views/list.jsp";
 		}
         RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 		dispatcher.forward(request, response);
