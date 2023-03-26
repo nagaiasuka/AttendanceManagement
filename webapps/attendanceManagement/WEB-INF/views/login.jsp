@@ -3,12 +3,14 @@
 pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
 <main>
     <div style="height: 10vh"></div>
-
+    
     <div class="d-flex align-items-center justify-content-center p-1" style="height: 85vh">
         <div class="border col-7 p-3">
             <br />
             <h2>ログイン</h2>
             <br />
+            <%=request.getAttribute("message") %>
+          
             <div class="row">
                 <div class="col-md">
                     <form>
@@ -26,9 +28,11 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
             <div class="row center-block text-center p-3">
                 <div class="col-1"></div>
                 <div class="col-5">
-                    <button type="button" class="btn btn-outline-secondary btn-block">
-                        閉じる
-                    </button>
+                    <a href="/attendanceManagement/signup">
+                        <button type="button" class="btn btn-outline-secondary btn-block">
+                            新規登録
+                        </button>
+                    </a>
                 </div>
                 <div class="col-5">
                     <button type="button" class="btn btn-outline-primary btn-block">

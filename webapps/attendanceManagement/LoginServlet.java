@@ -15,7 +15,7 @@ import jakarta.servlet.http.*;
 public class LoginServlet extends HttpServlet {
    	//ログイン画面を表示させる
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String view = "./WEB-INF/views/signup.jsp";
+		String view = "./WEB-INF/views/login.jsp";
         RequestDispatcher dispatcher = request.getRequestDispatcher(view);
 		dispatcher.forward(request, response);
 	}
