@@ -152,3 +152,5 @@
 0:0:0:0:0:0:0:1 - - [26/Mar/2023:21:42:44 +0900] "GET /attendanceManagement/signup HTTP/1.1" 200 3427
 0:0:0:0:0:0:0:1 - - [26/Mar/2023:21:42:46 +0900] "GET /attendanceManagement/signup HTTP/1.1" 200 3427
 0:0:0:0:0:0:0:1 - - [26/Mar/2023:21:42:50 +0900] "POST /attendanceManagement/userResist HTTP/1.1" 200 3335
+0:0:0:0:0:0:0:1 - - [26/Mar/2023:22:18:26 +0900] "GET /attendanceManagement/signup HTTP/1.1" 200 3427
+0:0:0:0:0:0:0:1 - - [26/Mar/2023:22:18:30 +0900] "POST /attendanceManagement/userResist HTTP/1.1" 200 3335
