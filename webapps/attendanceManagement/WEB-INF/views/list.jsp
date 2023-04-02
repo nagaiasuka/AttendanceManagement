@@ -16,22 +16,26 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
                             <tr>
                                 <th scope="col">ID</th>
                                 <th scope="col">氏名</th>
-                                <th scope="col">部署</th>
                                 <th scope="col">メールアドレス</th>
+                                <th scope="col">部署</th>
                             </tr>
                         </thead>
                         <tbody>
                             <% 
                             List<Integer> idList = (List<Integer>)request.getAttribute("idList");
-                            ArrayList<HashMap<Integer,String>> nameMap = (ArrayList<HashMap<Integer,String>>)request.getAttribute("nameMap");
-                            ArrayList<HashMap<Integer,String>> mailMap = (ArrayList<HashMap<Integer,String>>)request.getAttribute("mailMap");
-                                    
+                            HashMap<Integer,String> nameMap = (HashMap<Integer,String>)request.getAttribute("nameMap");
+                            HashMap<Integer,String> mailMap = (HashMap<Integer,String>)request.getAttribute("mailMap");
+                            Integer loginId =(Integer) request.getAttribute("loginId");
                             for(Integer id:idList){  
                             %>
                             <tr>
                                 <th scope="row"><%= id %></th>
-                                <td><%= nameMap.get(id).get(id) %></td>
-                                <td><%= mailMap.get(id).get(id) %></td>
+                                <% if(loginId == id){ %>
+                                  <td><a href="/attendanceManagement/calendar"><%= nameMap.get(id) %></a></td>
+                                  <% }else{ %>
+                                    <td><%= nameMap.get(id) %></td>
+                                <% } %>
+                                <td><%= mailMap.get(id) %></td>
                                 <td></td>
                             </tr>
                             <% } %>

@@ -3,11 +3,10 @@
 pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
 <main>
     <div style="height: 10vh;"></div>
-
     <div class="d-flex align-items-center justify-content-center p-1">
         <div class="border col-7 p-3">
             <br>
-            <h5>3月の勤怠管理</h2>
+            <h5>4月の勤怠管理</h2>
                 <br>
                 <div class="row">
                     <table class="table">
@@ -21,216 +20,21 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
                             </tr>
                         </thead>
                         <tbody>
+                            <% 
+                            List<Integer> idList = (List<Integer>)request.getAttribute("idList");
+                            HashMap<Integer,Integer> daringMap = (HashMap<Integer,Integer>)request.getAttribute("daringMap");
+                            HashMap<Integer,Integer> weekMap = (HashMap<Integer,Integer>)request.getAttribute("weekMap");
+                                    
+                            for(Integer id:idList){  
+                            %>
                             <tr>
-                                <th scope='row'>20230301</th>
+                                <th scope='row'><a href="/attendanceManagement/show?dating=<%= daringMap.get(id) %>"><%=daringMap.get(id)%></a></th>
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>
                                 <td></td>
                             </tr>
-                            <tr>
-                                <th scope='row'>20230302</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230303</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230304</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230305</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230306</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230307</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230308</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230309</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230310</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230311</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230312</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230313</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230314</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230315</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230316</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230317</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230318</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230319</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230320</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230321</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230322</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230323</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230324</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230325</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230326</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230327</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230328</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230329</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <th scope='row'>20230330</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td></td>
-                            </tr>
+                            <% } %>
                         </tbody>
                     </table>
                 </div>
