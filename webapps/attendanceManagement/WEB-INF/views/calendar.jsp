@@ -28,7 +28,7 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
                             for(Integer id:idList){  
                             %>
                             <tr>
-                                <th scope='row'><a href="/attendanceManagement/show?dating=<%= daringMap.get(id) %>"><%=daringMap.get(id)%></a></th>
+                                <th scope='row'><a href="/attendanceManagement/show?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>"><%=daringMap.get(id)%></a></th>
                                 <td>Mark</td>
                                 <td>Otto</td>
                                 <td>@mdo</td>

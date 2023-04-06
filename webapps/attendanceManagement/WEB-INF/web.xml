@@ -69,5 +69,27 @@
                 <url-pattern>/calendar</url-pattern>
         </servlet-mapping>
 
+        <!-- 詳細画面表示 -->
+        <servlet>
+                <servlet-name>Show</servlet-name>
+                <servlet-class>ShowServlet</servlet-class>
+        </servlet>
+
+        <servlet-mapping>
+                <servlet-name>Show</servlet-name>
+                <url-pattern>/show</url-pattern>
+        </servlet-mapping>
+
+        <!-- 勤務時間登録処理 -->
+        <servlet>
+                <servlet-name>WorkingTimeResist</servlet-name>
+                <servlet-class>WorkingTimeResistServlet</servlet-class>
+        </servlet>
+
+        <servlet-mapping>
+                <servlet-name>WorkingTimeResist</servlet-name>
+                <url-pattern>/workingTimeResist</url-pattern>
+        </servlet-mapping>
+
 
 </web-app>

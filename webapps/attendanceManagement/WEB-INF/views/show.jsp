@@ -10,34 +10,37 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
       <h2>登録・更新</h2>
       <br>
       <div class="row">
-        <form>
+        <%
+          
+        %>
+        <form action="/attendanceManagement/workingTimeResist" method="post">
           <div class="form-group p-2">
             <label>日付</label>
             <input type="text" class="form-control" value="20230302" disabled>
           </div>
           <div class="form-group p-2">
             <label>出勤時間</label>
-            <input type="text" class="form-control">
+            <input name="startTime" type="time" class="form-control">
           </div>
           <div class="form-group p-2">
             <label>退勤時間</label>
-            <input type="text" class="form-control">
+            <input name="endTime" type="time" class="form-control">
           </div>
           <div class="form-group p-2">
             <label>備考</label>
             <input type="text" class="form-control">
           </div>
+          <div class="row center-block text-center p-3">
+            <div class="col-1">
+            </div>
+            <div class="col-5">
+              <button type="button" class="btn btn-outline-secondary btn-block">戻る</button>
+            </div>
+            <div class="col-5">
+              <button type="submit" class="btn btn-outline-primary btn-block">登録・更新</button>
+            </div>
+          </div>
         </form>
-      </div>
-      <div class="row center-block text-center p-3">
-        <div class="col-1">
-        </div>
-        <div class="col-5">
-          <button type="button" class="btn btn-outline-secondary btn-block">閉じる</button>
-        </div>
-        <div class="col-5">
-          <button type="button" class="btn btn-outline-primary btn-block">登録・更新</button>
-        </div>
       </div>
       <br>
     </div>
