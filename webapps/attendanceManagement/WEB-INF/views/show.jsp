@@ -11,12 +11,15 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
       <br>
       <div class="row">
         <%
-          
+        String dating = (String) request.getAttribute("dating");
+        String calendar_id = (String) request.getAttribute("calendar_id");
         %>
         <form action="/attendanceManagement/workingTimeResist" method="post">
           <div class="form-group p-2">
             <label>日付</label>
-            <input type="text" class="form-control" value="20230302" disabled>
+            <input type="text" class="form-control" value="<%= dating %>" disabled>
+            <input type="hidden" name="dating" class="form-control" value="<%= dating %>">
+            <input type="hidden" name="calendar_id" class="form-control" value="<%= calendar_id %>">
           </div>
           <div class="form-group p-2">
             <label>出勤時間</label>
@@ -34,7 +37,9 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
             <div class="col-1">
             </div>
             <div class="col-5">
-              <button type="button" class="btn btn-outline-secondary btn-block">戻る</button>
+              <a href="/attendanceManagement/calendar">
+                <button type="button" class="btn btn-outline-secondary btn-block">戻る</button>
+              </a>
             </div>
             <div class="col-5">
               <button type="submit" class="btn btn-outline-primary btn-block">登録・更新</button>

@@ -1,0 +1,798 @@
+11-Apr-2023 20:55:07.519 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 20:55:07.523 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 20:55:07.527 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 20:55:07.585 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 20:55:07.588 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 20:55:07.601 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 20:55:07.614 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 20:55:11.113 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 20:55:11.117 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 20:55:11.117 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 20:55:11.117 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 20:55:11.118 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 20:55:11.118 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 20:55:11.118 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 20:55:11.118 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 20:55:11.118 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 20:55:11.118 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 20:55:11.118 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 20:55:11.162 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 20:55:11.162 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 20:55:11.163 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 20:55:11.172 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 20:55:11.400 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 20:55:11.424 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [502] ミリ秒
+11-Apr-2023 20:55:11.478 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 20:55:11.478 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 20:55:11.483 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 20:55:11.986 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 20:55:12.054 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [565] ミリ秒で完了しました。
+11-Apr-2023 20:55:12.054 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 20:55:12.072 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [18] ミリ秒で完了しました。
+11-Apr-2023 20:55:12.072 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 20:55:12.098 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [26] ミリ秒で完了しました。
+11-Apr-2023 20:55:12.098 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 20:55:12.306 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [208] ミリ秒で完了しました。
+11-Apr-2023 20:55:12.306 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 20:55:12.316 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [10] ミリ秒で完了しました。
+11-Apr-2023 20:55:12.316 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 20:55:12.330 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [14] ミリ秒で完了しました。
+11-Apr-2023 20:55:12.332 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 20:55:12.341 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [916] ミリ秒
+11-Apr-2023 21:08:11.747 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 21:08:11.751 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 21:08:11.757 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 21:08:11.813 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 21:08:11.814 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 21:08:11.822 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 21:08:11.833 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 21:08:14.112 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 21:08:14.115 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 21:08:14.115 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 21:08:14.115 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 21:08:14.115 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 21:08:14.115 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 21:08:14.115 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 21:08:14.115 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 21:08:14.115 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 21:08:14.115 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:08:14.115 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:08:14.124 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 21:08:14.124 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 21:08:14.124 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 21:08:14.124 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 21:08:14.124 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 21:08:14.124 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 21:08:14.124 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 21:08:14.125 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 21:08:14.125 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 21:08:14.125 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 21:08:14.125 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:08:14.125 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:08:14.125 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 21:08:14.129 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 21:08:14.260 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 21:08:14.272 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [248] ミリ秒
+11-Apr-2023 21:08:14.290 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 21:08:14.290 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 21:08:14.293 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 21:08:14.569 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 21:08:14.592 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [297] ミリ秒で完了しました。
+11-Apr-2023 21:08:14.593 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 21:08:14.603 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [10] ミリ秒で完了しました。
+11-Apr-2023 21:08:14.604 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 21:08:14.620 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+11-Apr-2023 21:08:14.620 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 21:08:14.766 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [146] ミリ秒で完了しました。
+11-Apr-2023 21:08:14.766 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 21:08:14.777 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 21:08:14.777 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 21:08:14.786 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [8] ミリ秒で完了しました。
+11-Apr-2023 21:08:14.787 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 21:08:14.793 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [520] ミリ秒
+11-Apr-2023 21:15:53.443 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 21:15:53.449 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 21:15:53.452 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 21:15:53.481 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 21:15:53.481 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 21:15:53.490 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 21:15:53.502 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 21:15:56.980 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 21:15:56.982 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 21:15:56.982 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 21:15:56.982 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 21:15:56.982 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 21:15:56.982 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 21:15:56.982 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 21:15:56.982 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 21:15:56.982 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 21:15:56.983 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:15:56.983 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:15:56.989 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 21:15:56.989 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:15:56.990 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 21:15:56.994 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 21:15:57.115 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 21:15:57.127 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [231] ミリ秒
+11-Apr-2023 21:15:57.142 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 21:15:57.142 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 21:15:57.146 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 21:15:57.406 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 21:15:57.424 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [277] ミリ秒で完了しました。
+11-Apr-2023 21:15:57.424 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 21:15:57.436 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [12] ミリ秒で完了しました。
+11-Apr-2023 21:15:57.436 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 21:15:57.453 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [17] ミリ秒で完了しました。
+11-Apr-2023 21:15:57.453 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 21:15:57.550 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [97] ミリ秒で完了しました。
+11-Apr-2023 21:15:57.550 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 21:15:57.559 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [9] ミリ秒で完了しました。
+11-Apr-2023 21:15:57.559 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 21:15:57.569 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [10] ミリ秒で完了しました。
+11-Apr-2023 21:15:57.571 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 21:15:57.577 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [448] ミリ秒
+11-Apr-2023 21:22:22.069 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 21:22:22.074 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 21:22:22.079 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 21:22:22.111 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 21:22:22.112 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 21:22:22.120 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 21:22:22.128 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 21:22:24.102 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 21:22:24.103 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 21:22:24.103 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 21:22:24.104 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 21:22:24.104 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 21:22:24.104 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 21:22:24.104 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 21:22:24.104 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 21:22:24.104 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 21:22:24.104 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:22:24.104 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:22:24.110 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 21:22:24.110 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 21:22:24.110 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 21:22:24.110 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 21:22:24.110 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 21:22:24.110 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 21:22:24.110 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 21:22:24.110 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 21:22:24.111 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 21:22:24.111 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 21:22:24.111 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:22:24.111 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:22:24.111 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 21:22:24.119 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 21:22:24.239 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 21:22:24.251 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [228] ミリ秒
+11-Apr-2023 21:22:24.267 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 21:22:24.267 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 21:22:24.270 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 21:22:24.530 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 21:22:24.549 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [278] ミリ秒で完了しました。
+11-Apr-2023 21:22:24.550 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 21:22:24.560 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 21:22:24.560 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 21:22:24.576 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+11-Apr-2023 21:22:24.576 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 21:22:24.671 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [95] ミリ秒で完了しました。
+11-Apr-2023 21:22:24.672 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 21:22:24.683 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 21:22:24.684 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 21:22:24.698 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [14] ミリ秒で完了しました。
+11-Apr-2023 21:22:24.703 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 21:22:24.721 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [469] ミリ秒
+11-Apr-2023 21:24:16.529 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 21:24:16.537 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 21:24:16.541 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 21:24:16.566 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 21:24:16.566 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 21:24:16.579 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 21:24:16.589 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 21:24:18.870 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 21:24:18.871 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 21:24:18.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 21:24:18.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 21:24:18.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 21:24:18.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 21:24:18.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 21:24:18.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 21:24:18.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 21:24:18.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:24:18.872 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:24:18.880 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 21:24:18.880 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 21:24:18.880 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 21:24:18.880 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 21:24:18.880 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 21:24:18.880 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 21:24:18.880 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 21:24:18.880 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 21:24:18.880 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 21:24:18.880 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 21:24:18.881 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:24:18.881 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:24:18.881 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 21:24:18.885 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 21:24:19.001 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 21:24:19.014 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [230] ミリ秒
+11-Apr-2023 21:24:19.029 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 21:24:19.029 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 21:24:19.032 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 21:24:19.302 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 21:24:19.320 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [288] ミリ秒で完了しました。
+11-Apr-2023 21:24:19.321 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 21:24:19.331 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 21:24:19.332 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 21:24:19.347 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [15] ミリ秒で完了しました。
+11-Apr-2023 21:24:19.347 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 21:24:19.435 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [88] ミリ秒で完了しました。
+11-Apr-2023 21:24:19.436 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 21:24:19.443 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [8] ミリ秒で完了しました。
+11-Apr-2023 21:24:19.443 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 21:24:19.452 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [9] ミリ秒で完了しました。
+11-Apr-2023 21:24:19.453 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 21:24:19.459 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [444] ミリ秒
+11-Apr-2023 21:28:54.011 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 21:28:54.016 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 21:28:54.019 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 21:28:54.054 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 21:28:54.055 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 21:28:54.064 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 21:28:54.067 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 21:28:56.343 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 21:28:56.345 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 21:28:56.345 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 21:28:56.345 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 21:28:56.345 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 21:28:56.345 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 21:28:56.345 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 21:28:56.345 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 21:28:56.346 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 21:28:56.346 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:28:56.346 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:28:56.354 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 21:28:56.359 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 21:28:56.484 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 21:28:56.497 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [249] ミリ秒
+11-Apr-2023 21:28:56.515 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 21:28:56.515 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 21:28:56.519 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 21:28:56.804 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 21:28:56.824 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [305] ミリ秒で完了しました。
+11-Apr-2023 21:28:56.824 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 21:28:56.835 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 21:28:56.835 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 21:28:56.851 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+11-Apr-2023 21:28:56.851 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 21:28:56.946 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [95] ミリ秒で完了しました。
+11-Apr-2023 21:28:56.946 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 21:28:56.956 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [10] ミリ秒で完了しました。
+11-Apr-2023 21:28:56.956 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 21:28:56.968 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [12] ミリ秒で完了しました。
+11-Apr-2023 21:28:56.969 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 21:28:56.980 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [481] ミリ秒
+11-Apr-2023 21:30:07.447 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 21:30:07.452 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 21:30:07.455 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 21:30:07.483 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 21:30:07.484 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 21:30:07.494 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 21:30:07.505 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 21:30:09.483 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 21:30:09.485 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 21:30:09.485 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 21:30:09.485 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 21:30:09.485 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 21:30:09.485 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 21:30:09.485 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 21:30:09.485 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 21:30:09.485 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 21:30:09.485 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:30:09.485 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 21:30:09.491 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:30:09.492 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:30:09.492 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 21:30:09.498 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 21:30:09.614 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 21:30:09.627 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [222] ミリ秒
+11-Apr-2023 21:30:09.642 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 21:30:09.642 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 21:30:09.645 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 21:30:09.901 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 21:30:09.919 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [273] ミリ秒で完了しました。
+11-Apr-2023 21:30:09.919 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 21:30:09.929 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [10] ミリ秒で完了しました。
+11-Apr-2023 21:30:09.930 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 21:30:09.945 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [15] ミリ秒で完了しました。
+11-Apr-2023 21:30:09.945 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 21:30:10.037 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [92] ミリ秒で完了しました。
+11-Apr-2023 21:30:10.037 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 21:30:10.044 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [7] ミリ秒で完了しました。
+11-Apr-2023 21:30:10.044 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 21:30:10.053 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [9] ミリ秒で完了しました。
+11-Apr-2023 21:30:10.055 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 21:30:10.062 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [434] ミリ秒
+11-Apr-2023 21:31:57.268 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 21:31:57.274 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 21:31:57.278 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 21:31:57.308 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 21:31:57.308 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 21:31:57.316 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 21:31:57.327 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 21:31:59.591 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 21:31:59.592 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 21:31:59.592 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 21:31:59.592 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 21:31:59.593 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 21:31:59.593 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 21:31:59.593 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 21:31:59.593 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 21:31:59.593 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 21:31:59.593 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:31:59.593 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:31:59.598 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:31:59.599 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 21:31:59.603 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 21:31:59.719 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 21:31:59.731 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [220] ミリ秒
+11-Apr-2023 21:31:59.746 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 21:31:59.746 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 21:31:59.749 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 21:32:00.007 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 21:32:00.025 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [275] ミリ秒で完了しました。
+11-Apr-2023 21:32:00.026 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 21:32:00.036 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 21:32:00.036 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 21:32:00.052 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+11-Apr-2023 21:32:00.053 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 21:32:00.142 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [89] ミリ秒で完了しました。
+11-Apr-2023 21:32:00.143 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 21:32:00.150 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [7] ミリ秒で完了しました。
+11-Apr-2023 21:32:00.150 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 21:32:00.159 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [9] ミリ秒で完了しました。
+11-Apr-2023 21:32:00.161 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 21:32:00.174 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [441] ミリ秒
+11-Apr-2023 21:38:45.884 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 21:38:45.897 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 21:38:45.904 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 21:38:45.951 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 21:38:45.953 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 21:38:45.962 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 21:38:45.997 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 21:38:48.071 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 21:38:48.073 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 21:38:48.073 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 21:38:48.073 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 21:38:48.073 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 21:38:48.073 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 21:38:48.073 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 21:38:48.073 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 21:38:48.073 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 21:38:48.073 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:38:48.073 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:38:48.079 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:38:48.080 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 21:38:48.084 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 21:38:48.212 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 21:38:48.225 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [256] ミリ秒
+11-Apr-2023 21:38:48.242 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 21:38:48.242 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 21:38:48.245 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 21:38:48.520 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 21:38:48.541 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [295] ミリ秒で完了しました。
+11-Apr-2023 21:38:48.541 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 21:38:48.555 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [14] ミリ秒で完了しました。
+11-Apr-2023 21:38:48.555 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 21:38:48.571 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+11-Apr-2023 21:38:48.571 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 21:38:48.667 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [96] ミリ秒で完了しました。
+11-Apr-2023 21:38:48.667 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 21:38:48.678 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 21:38:48.679 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 21:38:48.694 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [15] ミリ秒で完了しました。
+11-Apr-2023 21:38:48.695 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 21:38:48.709 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [483] ミリ秒
+11-Apr-2023 21:59:48.303 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 21:59:48.315 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 21:59:48.327 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 21:59:48.468 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 21:59:48.469 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 21:59:48.482 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 21:59:48.487 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 21:59:50.601 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 21:59:50.607 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 21:59:50.608 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 21:59:50.608 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 21:59:50.609 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 21:59:50.610 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 21:59:50.610 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 21:59:50.610 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 21:59:50.610 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 21:59:50.610 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:59:50.610 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 21:59:50.618 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 21:59:50.623 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 21:59:50.756 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 21:59:50.770 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [257] ミリ秒
+11-Apr-2023 21:59:50.787 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 21:59:50.788 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 21:59:50.791 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 21:59:51.079 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 21:59:51.102 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [309] ミリ秒で完了しました。
+11-Apr-2023 21:59:51.102 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 21:59:51.112 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [10] ミリ秒で完了しました。
+11-Apr-2023 21:59:51.113 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 21:59:51.129 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+11-Apr-2023 21:59:51.129 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 21:59:51.225 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [95] ミリ秒で完了しました。
+11-Apr-2023 21:59:51.225 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 21:59:51.234 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [9] ミリ秒で完了しました。
+11-Apr-2023 21:59:51.234 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 21:59:51.243 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [9] ミリ秒で完了しました。
+11-Apr-2023 21:59:51.244 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 21:59:51.250 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [480] ミリ秒
+11-Apr-2023 22:04:58.762 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 22:04:58.765 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 22:04:58.768 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 22:04:58.788 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 22:04:58.789 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 22:04:58.796 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 22:04:58.806 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 22:05:01.328 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 22:05:01.330 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 22:05:01.330 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 22:05:01.330 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 22:05:01.330 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 22:05:01.330 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 22:05:01.330 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 22:05:01.330 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 22:05:01.331 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 22:05:01.331 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 22:05:01.331 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 22:05:01.339 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 22:05:01.339 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 22:05:01.339 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 22:05:01.339 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 22:05:01.339 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 22:05:01.339 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 22:05:01.339 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 22:05:01.340 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 22:05:01.340 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 22:05:01.340 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 22:05:01.340 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 22:05:01.340 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 22:05:01.340 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 22:05:01.344 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 22:05:01.469 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 22:05:01.488 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [246] ミリ秒
+11-Apr-2023 22:05:01.509 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 22:05:01.509 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 22:05:01.512 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 22:05:01.900 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 22:05:01.923 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [409] ミリ秒で完了しました。
+11-Apr-2023 22:05:01.923 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 22:05:01.934 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 22:05:01.934 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 22:05:01.949 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [15] ミリ秒で完了しました。
+11-Apr-2023 22:05:01.949 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 22:05:02.041 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [92] ミリ秒で完了しました。
+11-Apr-2023 22:05:02.041 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 22:05:02.049 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [8] ミリ秒で完了しました。
+11-Apr-2023 22:05:02.049 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 22:05:02.058 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [9] ミリ秒で完了しました。
+11-Apr-2023 22:05:02.060 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 22:05:02.066 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [576] ミリ秒
+11-Apr-2023 22:20:45.840 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 22:20:45.856 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 22:20:45.868 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 22:20:46.018 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 22:20:46.019 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 22:20:46.031 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 22:20:46.041 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 22:20:48.713 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 22:20:48.715 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 22:20:48.715 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 22:20:48.715 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 22:20:48.715 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 22:20:48.715 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 22:20:48.715 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 22:20:48.715 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 22:20:48.715 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 22:20:48.716 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 22:20:48.716 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 22:20:48.722 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 22:20:48.722 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 22:20:48.722 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 22:20:48.722 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 22:20:48.722 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 22:20:48.722 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 22:20:48.722 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 22:20:48.722 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 22:20:48.722 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 22:20:48.723 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 22:20:48.723 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 22:20:48.723 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 22:20:48.723 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 22:20:48.728 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 22:20:48.857 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 22:20:48.872 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [263] ミリ秒
+11-Apr-2023 22:20:48.893 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 22:20:48.893 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 22:20:48.896 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 22:20:49.187 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 22:20:49.210 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [313] ミリ秒で完了しました。
+11-Apr-2023 22:20:49.210 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 22:20:49.221 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 22:20:49.221 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 22:20:49.237 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [16] ミリ秒で完了しました。
+11-Apr-2023 22:20:49.237 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 22:20:49.331 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [94] ミリ秒で完了しました。
+11-Apr-2023 22:20:49.331 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 22:20:49.341 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [10] ミリ秒で完了しました。
+11-Apr-2023 22:20:49.342 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 22:20:49.352 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [10] ミリ秒で完了しました。
+11-Apr-2023 22:20:49.354 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 22:20:49.360 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [487] ミリ秒
+11-Apr-2023 23:12:20.388 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 23:12:20.401 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 23:12:20.410 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 23:12:20.505 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 23:12:20.505 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 23:12:20.516 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 23:12:20.524 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 23:12:22.747 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 23:12:22.749 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 23:12:22.749 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 23:12:22.749 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 23:12:22.749 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 23:12:22.749 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 23:12:22.750 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 23:12:22.750 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 23:12:22.750 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 23:12:22.750 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 23:12:22.750 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 23:12:22.757 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 23:12:22.757 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 23:12:22.757 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 23:12:22.757 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 23:12:22.757 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 23:12:22.757 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 23:12:22.758 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 23:12:22.758 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 23:12:22.758 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 23:12:22.758 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 23:12:22.758 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 23:12:22.758 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 23:12:22.758 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 23:12:22.762 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 23:12:22.896 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 23:12:22.909 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [248] ミリ秒
+11-Apr-2023 23:12:22.927 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 23:12:22.927 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 23:12:22.930 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 23:12:23.207 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 23:12:23.227 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [296] ミリ秒で完了しました。
+11-Apr-2023 23:12:23.227 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 23:12:23.238 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 23:12:23.239 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 23:12:23.254 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [15] ミリ秒で完了しました。
+11-Apr-2023 23:12:23.254 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 23:12:23.343 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [89] ミリ秒で完了しました。
+11-Apr-2023 23:12:23.344 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 23:12:23.351 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [7] ミリ秒で完了しました。
+11-Apr-2023 23:12:23.351 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 23:12:23.360 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [9] ミリ秒で完了しました。
+11-Apr-2023 23:12:23.361 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 23:12:23.368 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [457] ミリ秒
+11-Apr-2023 23:16:09.075 情報 [main] org.apache.catalina.core.StandardServer.await 有効なシャットダウンコマンドがシャットダウンポート経由で受信されました。 サーバーインスタンスを停止します。
+11-Apr-2023 23:16:09.087 情報 [main] org.apache.coyote.AbstractProtocol.pause ProtocolHandler ["http-nio-8080"] を一時停止します。
+11-Apr-2023 23:16:09.092 情報 [main] org.apache.catalina.core.StandardService.stopInternal サービス [Catalina] を停止します
+11-Apr-2023 23:16:09.135 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesJdbc Web アプリケーション [attendanceManagement] は自身で登録した JDBC ドライバー [com.mysql.cj.jdbc.Driver] を停止時に解除できませんでした。メモリーリークの発生を防ぐには JDBC ドライバーを強制的に解除してください。
+11-Apr-2023 23:16:09.136 警告 [main] org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesThreads Webアプリケーション [attendanceManagement] は [mysql-cj-abandoned-connection-cleanup] という名前のスレッドを開始したようですが、停止に失敗しました。これはメモリリークを引き起こす可能性が非常に高いです。スレッドのスタックトレース: 
+ java.base@18.0.2.1/java.lang.Object.wait(Native Method)
+ java.base@18.0.2.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:155)
+ com.mysql.cj.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:91)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+ java.base@18.0.2.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@18.0.2.1/java.lang.Thread.run(Thread.java:833)
+11-Apr-2023 23:16:09.156 情報 [main] org.apache.coyote.AbstractProtocol.stop ProtocolHandler ["http-nio-8080"]の停止中
+11-Apr-2023 23:16:09.167 情報 [main] org.apache.coyote.AbstractProtocol.destroy ProtocolHandler ["http-nio-8080"] を破棄します。
+11-Apr-2023 23:16:11.464 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Serverのバージョン名:     Apache Tomcat/10.1.7
+11-Apr-2023 23:16:11.465 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Server ビルド:            Feb 27 2023 20:25:27 UTC
+11-Apr-2023 23:16:11.465 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log サーバーのバージョン番号: 10.1.7.0
+11-Apr-2023 23:16:11.465 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS 名:                    Mac OS X
+11-Apr-2023 23:16:11.465 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log OS バージョン:            12.1
+11-Apr-2023 23:16:11.466 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log アーキテクチャ:           aarch64
+11-Apr-2023 23:16:11.466 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                /Library/Java/JavaVirtualMachines/jdk-18.0.2.1.jdk/Contents/Home
+11-Apr-2023 23:16:11.466 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM バージョン:           18.0.2.1+1-1
+11-Apr-2023 23:16:11.466 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM ベンダ:               Oracle Corporation
+11-Apr-2023 23:16:11.466 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 23:16:11.466 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:            /Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.config.file=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/conf/logging.properties
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djdk.tls.ephemeralDHKeySize=2048
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dorg.apache.catalina.security.SecurityListener.UMASK=0027
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.lang=ALL-UNNAMED
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.io=ALL-UNNAMED
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util=ALL-UNNAMED
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.base=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 23:16:11.473 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Dcatalina.home=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2
+11-Apr-2023 23:16:11.474 情報 [main] org.apache.catalina.startup.VersionLoggerListener.log コマンドライン引数:       -Djava.io.tmpdir=/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/temp
+11-Apr-2023 23:16:11.478 情報 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 商用環境に最適な性能を発揮する APR ベースの Tomcat ネイティブライブラリが java.library.path [/Users/asukanagai/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.] に存在しません。
+11-Apr-2023 23:16:11.604 情報 [main] org.apache.coyote.AbstractProtocol.init プロトコルハンドラ ["http-nio-8080"] を初期化します。
+11-Apr-2023 23:16:11.617 情報 [main] org.apache.catalina.startup.Catalina.load サーバーの初期化 [247] ミリ秒
+11-Apr-2023 23:16:11.635 情報 [main] org.apache.catalina.core.StandardService.startInternal サービス [Catalina] を起動します
+11-Apr-2023 23:16:11.635 情報 [main] org.apache.catalina.core.StandardEngine.startInternal サーブレットエンジンの起動：[Apache Tomcat/10.1.7]
+11-Apr-2023 23:16:11.638 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] を配備します
+11-Apr-2023 23:16:11.909 情報 [main] org.apache.jasper.servlet.TldScanner.scanJars 少なくとも1つのJARでTLDをスキャンしましたが、TLDが含まれていませんでした。スキャンしたもののTLDが見つからなかったJARの完全なリストについては、このロガーのデバッグログを有効にしてください。スキャン中に不要なJARをスキップすると、起動時間とJSPのコンパイル時間が短縮されます。
+11-Apr-2023 23:16:11.929 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/attendanceManagement] の Web アプリケーションの配備は [290] ミリ秒で完了しました。
+11-Apr-2023 23:16:11.929 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] を配備します
+11-Apr-2023 23:16:11.940 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/docs] の Web アプリケーションの配備は [11] ミリ秒で完了しました。
+11-Apr-2023 23:16:11.940 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] を配備します
+11-Apr-2023 23:16:11.955 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/manager] の Web アプリケーションの配備は [15] ミリ秒で完了しました。
+11-Apr-2023 23:16:11.955 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] を配備します
+11-Apr-2023 23:16:12.051 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/examples] の Web アプリケーションの配備は [95] ミリ秒で完了しました。
+11-Apr-2023 23:16:12.051 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] を配備します
+11-Apr-2023 23:16:12.058 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/ROOT] の Web アプリケーションの配備は [7] ミリ秒で完了しました。
+11-Apr-2023 23:16:12.058 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web アプリケーションディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] を配備します
+11-Apr-2023 23:16:12.068 情報 [main] org.apache.catalina.startup.HostConfig.deployDirectory ディレクトリ [/Users/asukanagai/Desktop/Attendance management/apache-tomcat-10.1.7 2/webapps/host-manager] の Web アプリケーションの配備は [9] ミリ秒で完了しました。
+11-Apr-2023 23:16:12.071 情報 [main] org.apache.coyote.AbstractProtocol.start プロトコルハンドラー ["http-nio-8080"] を開始しました。
+11-Apr-2023 23:16:12.077 情報 [main] org.apache.catalina.startup.Catalina.start サーバーの起動 [459] ミリ秒

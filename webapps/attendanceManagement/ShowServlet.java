@@ -65,11 +65,14 @@ public class ShowServlet extends HttpServlet {
 					
 					//パラメータの受取
 					String val = request.getParameter("name");
+					String calendar_id = request.getParameter("calendar_id");
 					//jspにデータを渡す
 					request.setAttribute("idList",idList);
 					request.setAttribute("daringMap",daringMap);
 					request.setAttribute("weekMap",weekMap);
 					request.setAttribute("loginId",loginId);
+					request.setAttribute("calendar_id",calendar_id);
+					request.setAttribute("dating",dating);
 			}catch (Exception e) {
 				request.setAttribute("message","Exception:"+e.getMessage());
 			}

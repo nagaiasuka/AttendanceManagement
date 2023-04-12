@@ -33,7 +33,7 @@ public class WorkingTimeResistServlet extends HttpServlet {
 		String loginFlg = (String)session.getAttribute("loginFlg");
 		Integer loginId = (Integer)session.getAttribute("loginId");
 
-		String dating = request.getParameter("dating");
+
 
 		if(loginFlg == null || loginFlg==""){
 			String redirectUrl = "/attendanceManagement/login";
@@ -47,49 +47,96 @@ public class WorkingTimeResistServlet extends HttpServlet {
 			}
 			
 			//データの受取
+			String calendar_id = request.getParameter("calendar_id");
+			String dating = request.getParameter("dating");
 			String startTime = request.getParameter("startTime");
 			String endTime = request.getParameter("endTime");
-			
-			//データの取得
-			String sql = "SELECT * FROM calendar";
+
+			//バリデーション
+			List<String> caveatList = new ArrayList<>();
+			if(calendar_id == null || dating ==null){
+				caveatList.add("日程の取得ができませんでした。最初からやり直してください。");
+			}
+			boolean caveatFlg = false; 
+			if(caveatList.size()!=0){
+				caveatFlg = true;
+			}
+			// 現在のデータがあるか取得
+			String selectsql = "SELECT * FROM `work_ record` WHERE user_id = ? and calendar_id =?;";
+			String insertSql = "INSERT INTO `work_ record` (user_id,calendar_id,start_time,end_time) values (?,?,?,?);";
+			String updateSql = "update `work_ record` set start_time = ? , end_time = ? WHERE user_id = ? AND calendar_id  = ?;";
 			try(
 				Connection connection = DriverManager.getConnection(url, user, dbpass);
-				PreparedStatement statement = connection.prepareStatement(sql);
-				ResultSet results = statement.executeQuery()){
+				PreparedStatement statement = connection.prepareStatement(selectsql)){
+					statement.setInt(1, loginId);
+					statement.setString(2, calendar_id);
+
+					ResultSet results = statement.executeQuery();
 				
-					List<Integer> idList = new ArrayList<>();
-					HashMap<Integer,Integer> daringMap = new HashMap<Integer,Integer>();
-					HashMap<Integer,Integer> weekMap = new HashMap<Integer,Integer>();
-	
-					while(results.next()){
-						int calendar_id = results.getInt("calendar_id");
-						// Integer dating = results.getInt("dating");
-						Integer week = results.getInt("week");
-						   
-						//データの投入
-						idList.add(calendar_id);
-						// daringMap.put(calendar_id, dating);
-						weekMap.put(calendar_id, week);
-					}
 					
-					//jspにデータを渡す
-					request.setAttribute("idList",idList);
-					request.setAttribute("daringMap",daringMap);
-					request.setAttribute("weekMap",weekMap);
-					request.setAttribute("loginId",loginId);
+					Long getStartTime = null;
+					Long getEndTime = null;
+					while(results.next()){
+						
+						getStartTime = results.getLong("start_time");
+						getEndTime = results.getLong("end_time");
+					}
+				
+					if(getStartTime == null || getEndTime == null){
+						//新規登録
+						System.out.println("sinnki");
+						String formatStartTime = null;
+						if(!startTime.isEmpty() || startTime != null ){
+							formatStartTime = startTime.replace(":", "");
+						}
+						String formatEndTime = null;
+						if(!endTime.isEmpty()){
+							formatEndTime = endTime.replace(":", "");
+						}
+						PreparedStatement insertStatement = connection.prepareStatement(insertSql);
+							insertStatement.setInt(1, loginId);
+							insertStatement.setInt(2, Integer.valueOf(calendar_id));
+							insertStatement.setLong(3, Integer.valueOf(formatStartTime));
+							insertStatement.setLong(4, Integer.valueOf(formatEndTime));
+							insertStatement.executeUpdate();
+							connection.close();
+						
+					}else{
+						//更新処理
+						String formatStartTime = null;
+						if(!startTime.isEmpty()){
+							formatStartTime = startTime.replace(":", "");
+						}else{
+							formatStartTime = String.valueOf(getStartTime);
+						}
+						String formatEndTime = null;
+						if(!endTime.isEmpty()){
+							formatEndTime = endTime.replace(":", "");
+						}else{
+							formatEndTime = String.valueOf(getEndTime);
+						}
+						PreparedStatement updateStatement = connection.prepareStatement(updateSql);
+							updateStatement.setLong(1, Integer.valueOf(formatStartTime));
+							updateStatement.setLong(2, Integer.valueOf(formatEndTime));
+							updateStatement.setInt(3, loginId);
+							updateStatement.setInt(4, Integer.valueOf(calendar_id));
+							updateStatement.executeUpdate();
+							connection.close();
+
+					}
+					connection.close();
 			}catch (Exception e) {
+				System.out.println(e.getMessage());
 				request.setAttribute("message","Exception:"+e.getMessage());
 			}
-	
-			
-		
-		//カレンダー画面の表示
-		String view = "./WEB-INF/views/show.jsp";
-		RequestDispatcher dispatcher = request.getRequestDispatcher(view);
-		dispatcher.forward(request, response);
-
-		//バリデーション
-		
-      
+			if(caveatFlg){
+				request.setAttribute("caveatList",caveatList);
+				String view = "./WEB-INF/views/error.jsp";
+				RequestDispatcher dispatcher = request.getRequestDispatcher(view);
+				dispatcher.forward(request, response);
+			}else{
+				response.sendRedirect("/attendanceManagement/show?calendar_id="+ calendar_id +"&dating="+dating);		
+			}
+		}
 	}
 }

@@ -6,7 +6,7 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
     <div class="d-flex align-items-center justify-content-center p-1">
         <div class="border col-7 p-3">
             <br>
-            <h5>4月の勤怠管理</h2>
+            <h5>4月の勤怠管理</h5>
                 <br>
                 <div class="row">
                     <table class="table">
@@ -40,8 +40,6 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
                 </div>
                 <br>
         </div>
-
-
     </div>
     <div style="height: 10vh;"></div>
 </main>
