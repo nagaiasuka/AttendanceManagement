@@ -51,7 +51,6 @@ public class WorkingTimeResistServlet extends HttpServlet {
 			String dating = request.getParameter("dating");
 			String startTime = request.getParameter("startTime");
 			String endTime = request.getParameter("endTime");
-
 			//バリデーション
 			List<String> caveatList = new ArrayList<>();
 			if(calendar_id == null || dating ==null){
@@ -76,17 +75,15 @@ public class WorkingTimeResistServlet extends HttpServlet {
 					
 					Long getStartTime = null;
 					Long getEndTime = null;
-					while(results.next()){
-						
+					while(results.next()){	
 						getStartTime = results.getLong("start_time");
 						getEndTime = results.getLong("end_time");
 					}
-				
+					
 					if(getStartTime == null || getEndTime == null){
 						//新規登録
-						System.out.println("sinnki");
 						String formatStartTime = null;
-						if(!startTime.isEmpty() || startTime != null ){
+						if(!startTime.isEmpty()){
 							formatStartTime = startTime.replace(":", "");
 						}
 						String formatEndTime = null;
@@ -95,9 +92,19 @@ public class WorkingTimeResistServlet extends HttpServlet {
 						}
 						PreparedStatement insertStatement = connection.prepareStatement(insertSql);
 							insertStatement.setInt(1, loginId);
-							insertStatement.setInt(2, Integer.valueOf(calendar_id));
-							insertStatement.setLong(3, Integer.valueOf(formatStartTime));
-							insertStatement.setLong(4, Integer.valueOf(formatEndTime));
+							insertStatement.setInt(2, Integer.parseInt(calendar_id));
+							Long nullVal = null;
+							if(formatStartTime != null){
+								insertStatement.setLong(3, Integer.valueOf(formatStartTime));
+							}else{
+								insertStatement.setNull(3, java.sql.Types.BIGINT);
+
+							}
+							if(formatEndTime!=null){
+								insertStatement.setLong(4, Integer.valueOf(formatEndTime));
+							}else{
+								insertStatement.setNull(4, java.sql.Types.BIGINT);
+							}
 							insertStatement.executeUpdate();
 							connection.close();
 						
@@ -125,10 +132,15 @@ public class WorkingTimeResistServlet extends HttpServlet {
 
 					}
 					connection.close();
+
 			}catch (Exception e) {
 				System.out.println(e.getMessage());
+				e.printStackTrace();
 				request.setAttribute("message","Exception:"+e.getMessage());
 			}
+
+
+
 			if(caveatFlg){
 				request.setAttribute("caveatList",caveatList);
 				String view = "./WEB-INF/views/error.jsp";

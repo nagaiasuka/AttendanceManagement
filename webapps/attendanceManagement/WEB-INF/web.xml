@@ -91,5 +91,16 @@
                 <url-pattern>/workingTimeResist</url-pattern>
         </servlet-mapping>
 
+        <!-- 勤務時間削除処理 -->
+        <servlet>
+                <servlet-name>WorkingTimeDelete</servlet-name>
+                <servlet-class>WorkingTimeDeleteServlet</servlet-class>
+        </servlet>
+
+        <servlet-mapping>
+                <servlet-name>WorkingTimeDelete</servlet-name>
+                <url-pattern>/workingTimeDelete</url-pattern>
+        </servlet-mapping>
+
 
 </web-app>

@@ -71,8 +71,40 @@ public class CalendarServlet extends HttpServlet {
 				request.setAttribute("message","Exception:"+e.getMessage());
 			}
 	
-			
-		
+			String work_record_select_sql = "SELECT * FROM `work_ record` WHERE user_id = ?";
+			try(
+				Connection connection = DriverManager.getConnection(url, user, dbpass);
+				PreparedStatement statement = connection.prepareStatement(work_record_select_sql)){
+					statement.setInt(1, loginId);
+
+					ResultSet results = statement.executeQuery();
+
+					List<Integer> calendarIdList = new ArrayList<>();
+					HashMap<Integer,Long> startTimeMap = new HashMap<Integer,Long>();
+					HashMap<Integer,Long> endTimeMap = new HashMap<Integer,Long>();
+	
+					while(results.next()){
+						int time_calendar_id = results.getInt("calendar_id");
+						Long start_time = results.getLong("start_time");
+						Long end_time = results.getLong("end_time");
+
+							//データの投入
+						calendarIdList.add(time_calendar_id);
+						startTimeMap.put(time_calendar_id, start_time);
+						endTimeMap.put(time_calendar_id, end_time);
+					}
+					
+					//jspにデータを渡す
+					request.setAttribute("startTimeMap",startTimeMap);
+					request.setAttribute("endTimeMap",endTimeMap);
+					
+				
+				
+			}catch (Exception e) {
+				System.out.println(e);
+				request.setAttribute("message","Exception:"+e.getMessage());
+			}
+	
 		//カレンダー画面の表示
 		String view = "./WEB-INF/views/calendar.jsp";
 		RequestDispatcher dispatcher = request.getRequestDispatcher(view);

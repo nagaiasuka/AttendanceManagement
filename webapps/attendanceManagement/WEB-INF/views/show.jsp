@@ -13,6 +13,8 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
         <%
         String dating = (String) request.getAttribute("dating");
         String calendar_id = (String) request.getAttribute("calendar_id");
+        Long startTime = (Long) request.getAttribute("startTime");
+        Long endTime = (Long) request.getAttribute("endTime");
         %>
         <form action="/attendanceManagement/workingTimeResist" method="post">
           <div class="form-group p-2">
@@ -23,25 +25,41 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
           </div>
           <div class="form-group p-2">
             <label>出勤時間</label>
-            <input name="startTime" type="time" class="form-control">
+            <%
+            String formatStartTime ="";
+            if(startTime != null){
+               formatStartTime = String.format("%02d:%02d", startTime / 100, startTime % 100);
+            }
+            %>
+            <input name="startTime" type="time" class="form-control" <% if(formatStartTime != ""){ %> value="<%=formatStartTime%>"<%}%>>
           </div>
           <div class="form-group p-2">
             <label>退勤時間</label>
-            <input name="endTime" type="time" class="form-control">
+            <%
+            String formatEndTime ="";
+            if(endTime != null){
+              formatEndTime = String.format("%02d:%02d", endTime / 100, endTime % 100);
+            }
+            %>
+            <input name="endTime" type="time" class="form-control" <% if(formatEndTime != ""){ %> value="<%=formatEndTime%>"<%}%>>
           </div>
           <div class="form-group p-2">
             <label>備考</label>
             <input type="text" class="form-control">
           </div>
-          <div class="row center-block text-center p-3">
-            <div class="col-1">
-            </div>
-            <div class="col-5">
+          <div class="row justify-content-center">
+           
+            <div class="col-3">
               <a href="/attendanceManagement/calendar">
                 <button type="button" class="btn btn-outline-secondary btn-block">戻る</button>
               </a>
             </div>
-            <div class="col-5">
+            <div class="col-3">
+              <a href="/attendanceManagement/workingTimeDelete?calendar_id=<%= calendar_id %>&dating=<%= dating %>">
+                <button type="button" class="btn btn-danger">削除</button>
+              </a>
+            </div>
+            <div class="col-3">
               <button type="submit" class="btn btn-outline-primary btn-block">登録・更新</button>
             </div>
           </div>

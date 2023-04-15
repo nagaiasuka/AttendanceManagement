@@ -24,14 +24,37 @@ pageEncoding="UTF-8"%><%@ page import="java.util.*" %>
                             List<Integer> idList = (List<Integer>)request.getAttribute("idList");
                             HashMap<Integer,Integer> daringMap = (HashMap<Integer,Integer>)request.getAttribute("daringMap");
                             HashMap<Integer,Integer> weekMap = (HashMap<Integer,Integer>)request.getAttribute("weekMap");
-                                    
+                            HashMap<Integer,Long> startTimeMap = (HashMap<Integer,Long>)request.getAttribute("startTimeMap");
+                            HashMap<Integer,Long> endTimeMap = (HashMap<Integer,Long>)request.getAttribute("endTimeMap");
                             for(Integer id:idList){  
                             %>
                             <tr>
                                 <th scope='row'><a href="/attendanceManagement/show?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>"><%=daringMap.get(id)%></a></th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <%
+                                String textStartTime ="";
+                                if(startTimeMap.get(id) != null && startTimeMap.get(id) !=0){
+                                    textStartTime = startTimeMap.get(id).toString();
+                                    textStartTime = textStartTime.substring(0, textStartTime.length()-2) + ":" + textStartTime.substring(textStartTime.length()-2);
+                                }
+                                %>
+                                <td><%= textStartTime %></td>
+                                <%
+                                String textEndTime ="";
+                                if(endTimeMap.get(id) != null && endTimeMap.get(id)!=0){
+                                    textEndTime = endTimeMap.get(id).toString();
+                                    textEndTime = textEndTime.substring(0, textEndTime.length()-2) + ":" + textEndTime.substring(textEndTime.length()-2);
+                                }
+                                %>
+                                <td><%= textEndTime %></td>
+                                <%
+                                String subtotal ="";
+                                if(endTimeMap.get(id) != null && startTimeMap.get(id) != null && startTimeMap.get(id) !=0 && endTimeMap.get(id) !=0){
+                                    Long totalTime= endTimeMap.get(id) - startTimeMap.get(id);
+                                    subtotal = totalTime.toString();
+                                    subtotal = subtotal.substring(0, subtotal.length()-2) + ":" + subtotal.substring(subtotal.length()-2);
+                                }
+                                %>
+                                <td><%= subtotal %></td>
                                 <td></td>
                             </tr>
                             <% } %>

@@ -1,0 +1,584 @@
+16-Apr-2023 00:31:13.601 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+16-Apr-2023 00:31:13.601 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+16-Apr-2023 00:31:16.195 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+16-Apr-2023 00:31:16.196 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+16-Apr-2023 00:31:16.196 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@79ab34c1')
+16-Apr-2023 00:48:00.892 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+16-Apr-2023 00:48:00.892 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+16-Apr-2023 00:48:04.347 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+16-Apr-2023 00:48:04.347 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+16-Apr-2023 00:48:04.347 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@985696')
+16-Apr-2023 00:51:31.785 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+16-Apr-2023 00:51:31.785 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+16-Apr-2023 00:51:34.771 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+16-Apr-2023 00:51:34.771 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+16-Apr-2023 00:51:34.771 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@985696')
+16-Apr-2023 00:52:45.193 重大 [http-nio-8080-exec-1] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	java.lang.StringIndexOutOfBoundsException: Range [0, -1) out of bounds for length 1
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+		at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+		at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+		at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+		at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4589)
+		at java.base/java.lang.String.substring(String.java:2703)
+		at org.apache.jsp.WEB_002dINF.views.calendar_jsp._jspService(calendar_jsp.java:222)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at CalendarServlet.doGet(CalendarServlet.java:111)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+16-Apr-2023 00:52:45.193 重大 [http-nio-8080-exec-1] org.apache.catalina.core.StandardWrapperValve.invoke パス [/attendanceManagement] を持つコンテキスト内のサーブレット [Calendar] のServlet.service() が例外 [[WEB-INF/views/calendar.jsp] の処理中に行番号 [45] で例外が発生しました。
+
+42:                                 String textEndTime ="";
+43:                                 if(endTimeMap.get(id) != null){
+44:                                     textEndTime = endTimeMap.get(id).toString();
+45:                                     textEndTime = textEndTime.substring(0, textEndTime.length()-2) + ":" + textEndTime.substring(textEndTime.length()-2);
+46:                                 }
+47:                                 %>
+48:                                 <td><%= textEndTime %></td>
+
+
+Stacktrace:] が根本的要因と共に投げられました
+	java.lang.StringIndexOutOfBoundsException: Range [0, -1) out of bounds for length 1
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+		at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+		at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+		at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+		at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4589)
+		at java.base/java.lang.String.substring(String.java:2703)
+		at org.apache.jsp.WEB_002dINF.views.calendar_jsp._jspService(calendar_jsp.java:222)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at CalendarServlet.doGet(CalendarServlet.java:111)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+16-Apr-2023 01:15:56.027 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+16-Apr-2023 01:15:56.027 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+16-Apr-2023 01:15:59.258 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+16-Apr-2023 01:15:59.258 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+16-Apr-2023 01:15:59.259 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@985696')
+16-Apr-2023 01:16:14.249 重大 [http-nio-8080-exec-5] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	java.lang.StringIndexOutOfBoundsException: Range [0, -1) out of bounds for length 1
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+		at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+		at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+		at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+		at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4589)
+		at java.base/java.lang.String.substring(String.java:2703)
+		at org.apache.jsp.WEB_002dINF.views.calendar_jsp._jspService(calendar_jsp.java:222)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at CalendarServlet.doGet(CalendarServlet.java:111)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+16-Apr-2023 01:16:14.249 重大 [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke パス [/attendanceManagement] を持つコンテキスト内のサーブレット [Calendar] のServlet.service() が例外 [[WEB-INF/views/calendar.jsp] の処理中に行番号 [45] で例外が発生しました。
+
+42:                                 String textEndTime ="";
+43:                                 if(endTimeMap.get(id) != null){
+44:                                     textEndTime = endTimeMap.get(id).toString();
+45:                                     textEndTime = textEndTime.substring(0, textEndTime.length()-2) + ":" + textEndTime.substring(textEndTime.length()-2);
+46:                                 }
+47:                                 %>
+48:                                 <td><%= textEndTime %></td>
+
+
+Stacktrace:] が根本的要因と共に投げられました
+	java.lang.StringIndexOutOfBoundsException: Range [0, -1) out of bounds for length 1
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+		at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+		at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+		at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+		at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4589)
+		at java.base/java.lang.String.substring(String.java:2703)
+		at org.apache.jsp.WEB_002dINF.views.calendar_jsp._jspService(calendar_jsp.java:222)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at CalendarServlet.doGet(CalendarServlet.java:111)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+16-Apr-2023 01:16:45.957 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+16-Apr-2023 01:16:45.957 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+16-Apr-2023 01:16:48.598 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+16-Apr-2023 01:16:48.598 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+16-Apr-2023 01:16:48.599 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5bcde458')
+16-Apr-2023 01:16:57.591 重大 [http-nio-8080-exec-3] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	java.lang.StringIndexOutOfBoundsException: Range [0, -1) out of bounds for length 1
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+		at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+		at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+		at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+		at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4589)
+		at java.base/java.lang.String.substring(String.java:2703)
+		at org.apache.jsp.WEB_002dINF.views.calendar_jsp._jspService(calendar_jsp.java:222)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at CalendarServlet.doGet(CalendarServlet.java:113)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+16-Apr-2023 01:16:57.591 重大 [http-nio-8080-exec-3] org.apache.catalina.core.StandardWrapperValve.invoke パス [/attendanceManagement] を持つコンテキスト内のサーブレット [Calendar] のServlet.service() が例外 [[WEB-INF/views/calendar.jsp] の処理中に行番号 [45] で例外が発生しました。
+
+42:                                 String textEndTime ="";
+43:                                 if(endTimeMap.get(id) != null){
+44:                                     textEndTime = endTimeMap.get(id).toString();
+45:                                     textEndTime = textEndTime.substring(0, textEndTime.length()-2) + ":" + textEndTime.substring(textEndTime.length()-2);
+46:                                 }
+47:                                 %>
+48:                                 <td><%= textEndTime %></td>
+
+
+Stacktrace:] が根本的要因と共に投げられました
+	java.lang.StringIndexOutOfBoundsException: Range [0, -1) out of bounds for length 1
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+		at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+		at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+		at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+		at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+		at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+		at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4589)
+		at java.base/java.lang.String.substring(String.java:2703)
+		at org.apache.jsp.WEB_002dINF.views.calendar_jsp._jspService(calendar_jsp.java:222)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at CalendarServlet.doGet(CalendarServlet.java:113)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+16-Apr-2023 01:31:36.372 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+16-Apr-2023 01:31:36.372 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+16-Apr-2023 01:31:39.731 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+16-Apr-2023 01:31:39.732 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+16-Apr-2023 01:31:39.732 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@985696')
+16-Apr-2023 02:13:00.438 重大 [http-nio-8080-exec-13] org.apache.catalina.core.ApplicationDispatcher.invoke サーブレット [jsp] のServlet.service()が例外を投げました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/show.jsp] の中の [58] 行目でエラーが発生しました
+id cannot be resolved to a variable
+55:               </a>
+56:             </div>
+57:             <div class="col-3">
+58:               <a href="/attendanceManagement/workingTimeDelete?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>">
+59:                 <button type="button" class="btn btn-danger">削除</button>
+60:               </a>
+61:             </div>
+
+
+JSPファイル: [/WEB-INF/views/show.jsp] の中の [58] 行目でエラーが発生しました
+daringMap cannot be resolved
+55:               </a>
+56:             </div>
+57:             <div class="col-3">
+58:               <a href="/attendanceManagement/workingTimeDelete?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>">
+59:                 <button type="button" class="btn btn-danger">削除</button>
+60:               </a>
+61:             </div>
+
+
+JSPファイル: [/WEB-INF/views/show.jsp] の中の [58] 行目でエラーが発生しました
+id cannot be resolved to a variable
+55:               </a>
+56:             </div>
+57:             <div class="col-3">
+58:               <a href="/attendanceManagement/workingTimeDelete?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>">
+59:                 <button type="button" class="btn btn-danger">削除</button>
+60:               </a>
+61:             </div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at ShowServlet.doGet(ShowServlet.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+16-Apr-2023 02:13:00.443 重大 [http-nio-8080-exec-13] org.apache.catalina.core.StandardWrapperValve.invoke パス [/attendanceManagement] を持つコンテキスト内のサーブレット [Show] のServlet.service() が例外 [JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/show.jsp] の中の [58] 行目でエラーが発生しました
+id cannot be resolved to a variable
+55:               </a>
+56:             </div>
+57:             <div class="col-3">
+58:               <a href="/attendanceManagement/workingTimeDelete?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>">
+59:                 <button type="button" class="btn btn-danger">削除</button>
+60:               </a>
+61:             </div>
+
+
+JSPファイル: [/WEB-INF/views/show.jsp] の中の [58] 行目でエラーが発生しました
+daringMap cannot be resolved
+55:               </a>
+56:             </div>
+57:             <div class="col-3">
+58:               <a href="/attendanceManagement/workingTimeDelete?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>">
+59:                 <button type="button" class="btn btn-danger">削除</button>
+60:               </a>
+61:             </div>
+
+
+JSPファイル: [/WEB-INF/views/show.jsp] の中の [58] 行目でエラーが発生しました
+id cannot be resolved to a variable
+55:               </a>
+56:             </div>
+57:             <div class="col-3">
+58:               <a href="/attendanceManagement/workingTimeDelete?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>">
+59:                 <button type="button" class="btn btn-danger">削除</button>
+60:               </a>
+61:             </div>
+
+
+Stacktrace:] が根本的要因と共に投げられました
+	org.apache.jasper.JasperException: JSPのクラスをコンパイルできません: 
+
+JSPファイル: [/WEB-INF/views/show.jsp] の中の [58] 行目でエラーが発生しました
+id cannot be resolved to a variable
+55:               </a>
+56:             </div>
+57:             <div class="col-3">
+58:               <a href="/attendanceManagement/workingTimeDelete?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>">
+59:                 <button type="button" class="btn btn-danger">削除</button>
+60:               </a>
+61:             </div>
+
+
+JSPファイル: [/WEB-INF/views/show.jsp] の中の [58] 行目でエラーが発生しました
+daringMap cannot be resolved
+55:               </a>
+56:             </div>
+57:             <div class="col-3">
+58:               <a href="/attendanceManagement/workingTimeDelete?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>">
+59:                 <button type="button" class="btn btn-danger">削除</button>
+60:               </a>
+61:             </div>
+
+
+JSPファイル: [/WEB-INF/views/show.jsp] の中の [58] 行目でエラーが発生しました
+id cannot be resolved to a variable
+55:               </a>
+56:             </div>
+57:             <div class="col-3">
+58:               <a href="/attendanceManagement/workingTimeDelete?calendar_id=<%= id %>&dating=<%= daringMap.get(id) %>">
+59:                 <button type="button" class="btn btn-danger">削除</button>
+60:               </a>
+61:             </div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:102)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:213)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:513)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:380)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:328)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:642)
+		at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:408)
+		at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:340)
+		at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:277)
+		at ShowServlet.doGet(ShowServlet.java:73)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:537)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:631)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:676)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+16-Apr-2023 02:17:30.211 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+16-Apr-2023 02:17:30.211 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+16-Apr-2023 02:17:34.634 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+16-Apr-2023 02:17:34.634 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+16-Apr-2023 02:17:34.634 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@281f23f2')
+16-Apr-2023 02:20:18.104 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+16-Apr-2023 02:20:18.104 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+16-Apr-2023 02:20:20.624 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+16-Apr-2023 02:20:20.624 情報 [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+16-Apr-2023 02:20:20.624 情報 [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@5bcde458')

@@ -7,18 +7,17 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+import javax.swing.plaf.TextUI;
+import javax.xml.crypto.Data;
+
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.*;
+import java.sql.*;
 
-@WebServlet("/showServlet")
-public class ShowServlet extends HttpServlet {
-   	//従業員一覧を表示させる		
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-	}
-	
+@WebServlet("/WorkingTimeDeleteServlet")
+public class WorkingTimeDeleteServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String url = "jdbc:mysql://localhost:3306/attendanceManagement";
 		String user = "root";
@@ -28,8 +27,9 @@ public class ShowServlet extends HttpServlet {
 		HttpSession session = request.getSession();
 		String loginFlg = (String)session.getAttribute("loginFlg");
 		Integer loginId = (Integer)session.getAttribute("loginId");
-		String calendar_id =request.getParameter("calendar_id");
-		String dating = request.getParameter("dating");
+
+
+
 		if(loginFlg == null || loginFlg==""){
 			String redirectUrl = "/attendanceManagement/login";
 			response.sendRedirect(redirectUrl);
@@ -40,37 +40,32 @@ public class ShowServlet extends HttpServlet {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
-				
-			String work_record_select_sql = "SELECT * FROM `work_ record` WHERE user_id = ? AND calendar_id =?";
+			
+			//データの受取
+			String calendar_id = request.getParameter("calendar_id");
+			String dating = request.getParameter("dating");
+			
+			// 現在のデータがあるか取得
+			String deletesql = "delete FROM `work_ record` WHERE user_id =? AND calendar_id =?;";
 			try(
 				Connection connection = DriverManager.getConnection(url, user, dbpass);
-				PreparedStatement statement = connection.prepareStatement(work_record_select_sql)){
+				PreparedStatement statement = connection.prepareStatement(deletesql)){
 					statement.setInt(1, loginId);
-					statement.setInt(2, Integer.parseInt(calendar_id));
+					statement.setString(2, calendar_id);
+					statement.executeUpdate();
+					connection.close();
 
-					ResultSet results = statement.executeQuery();
-
-					Long start_time=null;
-					Long end_time=null;
-					while(results.next()){
-						start_time = results.getLong("start_time");
-						end_time = results.getLong("end_time");
-					}
-					//jspにデータを渡す
-					request.setAttribute("startTime",start_time);
-					request.setAttribute("endTime",end_time);
 			}catch (Exception e) {
-				System.out.println(e);
+				System.out.println(e.getMessage());
+				e.printStackTrace();
 				request.setAttribute("message","Exception:"+e.getMessage());
 			}
-			request.setAttribute("dating",dating);
-			request.setAttribute("calendar_id",calendar_id);
+			response.sendRedirect("/attendanceManagement/show?calendar_id="+ calendar_id +"&dating="+dating);		
+		}
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		
-		//カレンダー画面の表示
-		String view = "./WEB-INF/views/show.jsp";
-		RequestDispatcher dispatcher = request.getRequestDispatcher(view);
-		dispatcher.forward(request, response);
 	}
-}
 }
